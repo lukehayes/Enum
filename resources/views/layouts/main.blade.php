@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Enum</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
 </head>
 <body>
 
@@ -17,8 +17,8 @@
 <h2>Enum.</h2>
 
 @yield('content')
-
     
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
 
