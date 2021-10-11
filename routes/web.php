@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\BoardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +16,5 @@ use App\Http\Controllers\FrontController;
 */
 
 Route::get('/', [FrontController::class, 'index']);
+
+Route::resource('boards', BoardController::class);
