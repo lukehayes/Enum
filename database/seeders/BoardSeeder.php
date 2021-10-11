@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class BoardSeeder extends Seeder
 {
@@ -13,6 +14,11 @@ class BoardSeeder extends Seeder
      */
     public function run()
     {
-        //
+        for($i = 0; $i <= 10; $i++)
+        {
+            DB::table('boards')->insert([
+                'title' => "Board Title: " . $i
+            ]);
+        }
     }
 }
