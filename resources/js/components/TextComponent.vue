@@ -1,5 +1,5 @@
 <template>
-    <p>A lovely text component</p>
+    <p>Text: {{ text }}</p>
 </template>
 
 /*----------------------------------------*/
@@ -7,6 +7,8 @@
 
 export default
 {
+    props: ['text'],
+
     mounted()
     {
         console.log("Text Component Mounted");
